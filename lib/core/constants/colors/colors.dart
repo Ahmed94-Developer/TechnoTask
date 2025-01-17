@@ -1,0 +1,24 @@
+import 'package:flutter/material.dart';
+
+const Color darkGreen = Color(0xff6BE0B5);
+const Color lightGreen = Color(0xffB3EDD8);
+const Color white = Color(0xffFFFFFF);
+const Color grey = Color(0xff757575);
+const Color black = Color(0xff000000);
+const Color btnColor = Color(0xff03C27C);
+const Color langBtnColor = Color(0xffEDEDED);
+const Color fieldTxtColor = Color(0xffA3A3A3);
+const Color bottomNavBg = Color(0xff027C4F);
+const Color homeProfileColor = Color(0xff027C4F);
+const Color bgColor = Color(0xffF5F5F5);
+const Color grey2 = Color(0xff5B5B5B);
+const Color dividerColor = Color(0xffE2E2E2);
+const Color titleColor = Color(0xff263238);
+const Color transparent = Colors.transparent;
+const Color tabColor = Color(0xffB3EDD8);
+const Color dividerColor2 = Color(0xffA9A9A9);
+const Color moreBgColor = Color(0xffF9F9F9);
+const Color dividerColor3 = Color(0xffF0F0F0);
+const Color red = Color(0xffAC0000);
+const unRatedStarColor = Color(0xffD9D9D9);
+const ratedStarColor = Color(0xffDED700);

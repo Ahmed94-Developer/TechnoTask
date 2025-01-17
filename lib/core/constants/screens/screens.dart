@@ -1,0 +1,10 @@
+const String splashSc = '/';
+const String languageSc = 'language';
+const String login = 'login';
+const String bottomBarSc = 'bottomBarSc';
+const orderDetailsSc = 'orderDetailsSc';
+const profileSc = 'profileSc';
+const aboutSc = "aboutUsSc";
+const termsSc = "termsSc";
+const privacySc = "privacySc";
+const myReviewsSc = "myReviewsSc";
