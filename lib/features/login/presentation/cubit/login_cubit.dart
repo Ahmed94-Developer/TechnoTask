@@ -50,7 +50,7 @@ class LoginCubit extends Cubit<LoginState> {
           child: Container(
             alignment: Alignment.center,
             width: 210,
-            padding: const EdgeInsets.only(top: 10,bottom: 10,left: 10,right: 10),
+            padding: const EdgeInsets.only(top: 10,bottom: 10,left: 3,right: 3),
             decoration:   BoxDecoration(color: black.withOpacity(.82),
                 borderRadius: const BorderRadius.all(Radius.circular(20.0))),
             child:  Text(response.message!,style: TextStyles.textview14Normal.copyWith(color: white),),
