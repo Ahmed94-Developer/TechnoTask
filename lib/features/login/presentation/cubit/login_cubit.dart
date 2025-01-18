@@ -46,15 +46,26 @@ class LoginCubit extends Cubit<LoginState> {
       }, (response)async{
         loading = false;
        await sharedPreferences.setBool('user', true);
-        msgKey.currentState!.showSnackBar(SnackBar(content: Text(response.message!
-          ,style: TextStyles.textview14Normal.copyWith(color: white),)));
+        fToast.showToast(
+          child: Container(
+            alignment: Alignment.center,
+            width: 210,
+            padding: const EdgeInsets.only(top: 10,bottom: 10,left: 10,right: 10),
+            decoration:   BoxDecoration(color: black.withOpacity(.82),
+                borderRadius: const BorderRadius.all(Radius.circular(20.0))),
+            child:  Text(response.message!,style: TextStyles.textview14Normal.copyWith(color: white),),
+          ),
+          gravity: ToastGravity.BOTTOM,
+          toastDuration: const Duration(seconds: 4),
+        );
+
         Navigator.of(navKey.currentContext!).pushReplacementNamed(bottomBarSc);
         emit(LoginSuccessState(loginResponse: response));
       });
     }on SocketException catch(e){
       loading = false;
-      msgKey.currentState!.showSnackBar(SnackBar(content:
-      Text(e.message,style: TextStyles.textview14Normal.copyWith(color: white),)));
+      msgKey.currentState!.showSnackBar(SnackBar(content: Text(e.message!
+        ,style: TextStyles.textview14Normal.copyWith(color: white),)));
       emit(LoginErrorState(message: e.message));
     }
   }

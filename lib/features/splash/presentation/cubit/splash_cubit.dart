@@ -17,7 +17,7 @@ class SplashCubit extends Cubit<SplashState> {
 
 
   Future<void>updateScreen()async{
-    Future.delayed(const Duration(milliseconds: 4000), () {
+    Future.delayed(const Duration(milliseconds: 3500), () {
       if(currentPage < 1){
         currentPage++;
       }else {

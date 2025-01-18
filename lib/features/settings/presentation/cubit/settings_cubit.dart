@@ -30,8 +30,6 @@ class SettingsCubit extends Cubit<SettingsState> {
         if(fail is ServerFailure){
           reviewLoading = false;
           msg = fail.message;
-          msgKey.currentState!.showSnackBar(SnackBar(content: Text(fail.message
-            ,style: TextStyles.textview14Normal.copyWith(color: white),)));
           emit(ReviewsErrorState(message: fail.message));
         }
       }, (success){
